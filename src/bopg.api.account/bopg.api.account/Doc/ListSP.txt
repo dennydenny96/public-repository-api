@@ -1,0 +1,16 @@
+﻿db user : pgapi.acc
+
+User
+spUserLogin
+spUserValidateToken
+spUserLogout
+spUserList
+spUserAdd
+
+Dashboard
+spDashboardMenuGet
+
+Page
+spPageAuthorization
+
+
