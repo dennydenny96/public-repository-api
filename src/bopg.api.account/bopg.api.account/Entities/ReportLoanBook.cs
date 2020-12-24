@@ -4,10 +4,12 @@ namespace bopg.api.account.Entities
 {
     public class ReportLoanBook
     {
-        public static BasicEntity ReportLoanBookList(Model.List data, Output.ReportLoanBookList obj)
+        public static BasicEntity ReportLoanBookList(Model.ReportLoanBookList data, Output.ReportLoanBookList obj)
         {
             var retVal = new BasicEntity();
 
+            retVal.AddParameter("@level", data.Level);
+            retVal.AddParameter("@userlogin", data.UserLogin);
             retVal.AddParameter("@page", data.Page);
             retVal.AddParameter("@page_size", data.PageSize);
 

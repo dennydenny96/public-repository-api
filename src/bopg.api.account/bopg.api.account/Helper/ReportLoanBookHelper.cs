@@ -5,7 +5,7 @@ namespace bopg.api.account.Helper
 {
     public class ReportLoanBookHelper
     {
-        public static BaseHelper ReportLoanBookList(Model.List data)
+        public static BaseHelper ReportLoanBookList(Model.ReportLoanBookList data)
         {
             var retVal = new BaseHelper();
             var objJSONPage = new Output.ReportLoanBookList();

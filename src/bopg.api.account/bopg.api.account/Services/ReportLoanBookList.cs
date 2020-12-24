@@ -26,7 +26,7 @@ namespace bopg.api.account.Services
                 }
                 else
                 {
-                    var tuple = this.ParsingJSONStringInput<Model.List>();
+                    var tuple = this.ParsingJSONStringInput<Model.ReportLoanBookList>();
                     if (tuple.Item1)
                     {
                         var data = tuple.Item3;

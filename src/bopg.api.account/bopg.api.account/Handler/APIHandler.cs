@@ -37,7 +37,7 @@ namespace bopg.api.account.Handler
                 case "/registration.api": { retVal = new Services.Registration(context).GetResponse(); break; }
                 case "/create/account/login/user.api": { retVal = new Services.CreateAccountLoginUser(context).GetResponse(); break; }
                 case "/login.api": { retVal = new Services.Login(context).GetResponse(); break; }
-                case "/validate_session.api": { retVal = new Services.ValidateSession(context).GetResponse(); break; }
+                //case "/validate_session.api": { retVal = new Services.ValidateSession(context).GetResponse(); break; }
                 case "/logout.api": { retVal = new Services.Logout(context).GetResponse(); break; }
 
                 case "/dashboard/menu.api": { retVal = new Services.Menu(context).GetResponse(); break; }
@@ -47,7 +47,7 @@ namespace bopg.api.account.Handler
                 case "/page/user_delete.api": { retVal = new Services.UserDelete(context).GetResponse(); break; }
                 case "/page/user_change_password.api": { retVal = new Services.ChangePassword(context).GetResponse(); break; }
 
-                case "/get/user.api": { retVal = new Services.GetUserList(context).GetResponse(); break; }
+                //case "/get/user.api": { retVal = new Services.GetUserList(context).GetResponse(); break; }
 
                 //Menu
                 case "/menu/list.api": { retVal = new Services.MenuList(context).GetResponse(); break; }
@@ -81,9 +81,6 @@ namespace bopg.api.account.Handler
                 case "/combo/databook.api": { retVal = new Services.ComboDataBook(context).GetResponse(); break; }
                 
                 default: { retVal = DefaultResponse(); break; }
-
-
-
 
             }
 
